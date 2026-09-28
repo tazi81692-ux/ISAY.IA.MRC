@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="YA — Wear Your Identity. A modern Moroccan clothing brand.">
+  <title>YA — Wear Your Identity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">YA — WEAR YOUR IDENTITY</div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="YA home">YA</a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn">Bag <span id="cartCount">0</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">NEW COLLECTION / 2026</p>
+        <h1>WEAR<br><span>YOUR IDENTITY.</span></h1>
+        <p class="hero-text">Clean silhouettes. Strong details. Made for people who create their own direction.</p>
+        <a class="button" href="#shop">SHOP THE COLLECTION</a>
+      </div>
+      <div class="hero-art">
+        <div class="hero-logo">YA</div>
+        <div class="orbit"></div>
+      </div>
+    </section>
+
+    <section class="marquee"><span>YA / YA / YA / YA / YA / YA / YA / YA /</span></section>
+
+    <section id="shop" class="shop section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>Selected pieces</h2>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="tshirt">T-Shirts</button>
+          <button class="filter" data-filter="hoodie">Hoodies</button>
+          <button class="filter" data-filter="jacket">Jackets</button>
+        </div>
+      </div>
+      <div id="products" class="products"></div>
+    </section>
+
+    <section id="about" class="about section">
+      <div>
+        <p class="eyebrow">ABOUT YA</p>
+        <h2>Not just clothes.<br>A point of view.</h2>
+      </div>
+      <p>YA is a modern clothing concept built around individuality, confidence and clean design. This GitHub Pages version is powered by Supabase for a shared online catalog and admin login.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">YA</div>
+    <p>© 2026 YA — Wear Your Identity</p>
+    <a href="admin.html">Admin</a>
+  </footer>
+
+  <div class="drawer" id="drawer">
+    <div class="drawer-box">
+      <button class="close" id="closeCart">×</button>
+      <p class="eyebrow">YOUR BAG</p>
+      <h2>Selected pieces</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total">Total <strong id="cartTotal">0 MAD</strong></div>
+      <button class="button full" id="checkout">ORDER VIA WHATSAPP</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>

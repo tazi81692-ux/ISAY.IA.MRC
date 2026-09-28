@@ -1,0 +1,1 @@
+Optional: put product images in this folder and update app.js if you want local image files.
